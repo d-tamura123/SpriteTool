@@ -19,3 +19,35 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Third-Party Components and Assets
+
+This software includes external components and assets.  
+Each component is subject to its own license terms.  
+Please refer to the following sources for details:
+
+- **Noto Sans JP**  
+  Copyright © Google  
+  Licensed under the SIL Open Font License, Version 1.1  
+  https://scripts.sil.org/OFL
+
+- **StandaloneFileBrowser**  
+  Copyright © gkngkc  
+  Licensed under the MIT License  
+  https://github.com/gkngkc/UnityStandaloneFileBrowser
+
+- **UnityChan Character Asset**  
+  Copyright © Unity Technologies Japan / Unity Technologies  
+  Licensed under Unity-Chan License  
+  https://unity-chan.com/contents/license_jp/
+
+- **Unity Toon Shader (com.unity.toonshader)**  
+  Copyright © Unity Technologies  
+  Licensed under Unity Companion License  
+  https://unity.com/legal/licenses/unity-companion-license
+
+---
+
+Please ensure compliance with each license when redistributing or modifying this software.
