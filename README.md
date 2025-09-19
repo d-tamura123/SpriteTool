@@ -45,6 +45,9 @@ The capture process consists of two steps: preview and export.
 
 **Output settings:** The export destination can be configured via the UI.
 
+For sample images of the tool interface and output results, see  
+[Issue #1: Sample Images](https://github.com/d-tamura123/SpriteTool/issues/1)
+
 ---
 
 ## Tips
@@ -106,6 +109,9 @@ License information is listed in the [LICENSE](LICENSE) file.
 - ステップ2 — エクスポート：プレビューを確認後、スプライトシートをファイルに書き出します。
 
 出力設定：保存先は UI から設定可能です。
+
+ツール画面や出力結果の参考画像については、以下のIssueをご覧ください。  
+[Issue #1: Sample Images](https://github.com/d-tamura123/SpriteTool/issues/1)
 
 ---
 
