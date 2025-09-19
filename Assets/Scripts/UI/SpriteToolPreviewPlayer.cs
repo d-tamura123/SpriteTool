@@ -240,7 +240,7 @@ public class SpriteToolPreviewPlayer : MonoBehaviour
         }
     }
 
-    public void StopPreview()
+    public void StopPreview(bool destroyCharacter = true)
     {
         isEnabled = false;
 
@@ -250,7 +250,7 @@ public class SpriteToolPreviewPlayer : MonoBehaviour
             playableGraph.Destroy();
         }
 
-        if (characterInstance != null)
+        if (destroyCharacter && characterInstance != null)
         {
             Destroy(characterInstance);
             characterInstance = null;

@@ -50,34 +50,16 @@ public class SpriteToolExportController : MonoBehaviour
             return;
         }
 
+        previewPlayer.StopPreview(false);
         previewPlayer.enabled = false;
-
+        
         ExportSettings settings = CollectSettingsFromUI();
         exporter.SetCharacterInstance(previewPlayer.GetCharacterInstance());
         exporter.ConfigureRenderTexture(settings.chipWidth, settings.chipHeight);
         
         //exporter.CaptureMotionFrames(settings);
         StartCoroutine(CaptureAndApply(settings));
-        /*
-        if (exporter.composedSpriteSheet != null)
-        {
-            pngPreviewRawImage.texture = exporter.composedSpriteSheet;
-            StartCoroutine(ApplyGridCellSizeNextFrame());
-            //GridLayoutGroup grid = pngPreviewRawImage.GetComponentInParent<GridLayoutGroup>();
-            //if (grid != null)
-            //{
-            //    grid.cellSize = new Vector2(exporter.composedSpriteSheet.width, exporter.composedSpriteSheet.height);
-           // }
-            //pngPreviewRawImage.rectTransform.sizeDelta = new Vector2(exporter.composedSpriteSheet.width, exporter.composedSpriteSheet.height);
-            logScroller.AddLog($"スプライトシート生成成功：{exporter.composedSpriteSheet.width}x{exporter.composedSpriteSheet.height} / {exporter.capturedFrames.Length}フレーム", LogLevel.Info);
-            ViewSwitchToggle.isOn = true;
-        }
-        else
-        {
-            Debug.LogWarning("SpriteToolExportController：プレビュー用スプライトシートが生成されていません");
-        }
-        previewPlayer.enabled = true;
-        */
+        
     }
 
     private IEnumerator CaptureAndApply(ExportSettings settings)
